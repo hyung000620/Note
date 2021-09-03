@@ -5,4 +5,6 @@
 ### 기술
 
 - `JAVA`
+- `javascript`
 - `SpringBoot`
+
