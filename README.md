@@ -7,4 +7,4 @@
 - `JAVA`
 - `javascript`
 - `SpringBoot`
-= `REST API`
+- `REST API`
