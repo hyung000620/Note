@@ -8,16 +8,8 @@ class Solution {
     }
 
     void func_b(ArrayList<Integer> stack1, ArrayList<Integer> stack2) {
-        while(!func_
-c
-(
-stack1
-)) {
-            Integer item = func_
-a
-(
-stack1
-);
+        while(!func_c(stack1)) {
+            Integer item = func_a(stack1);
             stack2.add(item);
         }
     }
@@ -27,22 +19,10 @@ stack1
     }
 
     public int solution(ArrayList<Integer> stack1, ArrayList<Integer> stack2) {
-        if(func_
-c
-(
-stack2
-)) {
-            func_
-b
-(
-stack1,stack2
-);
+        if(func_c(stack2)) {
+            func_b(stack1, stack2);
         }
-        Integer answer = (int)func_
-a
-(
-stack2
-);
+        Integer answer = (int)func_a(stack2);
         return answer;
     }
 
