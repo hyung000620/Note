@@ -3,7 +3,7 @@ import java.util.*;
 class Main {
     public long solution(long num) {
         num += 1;
-				String str = String.valueOf(num).replaceAll("0","1");
+	String str = String.valueOf(num).replaceAll("0","1");
         long answer = Long.parseLong(str);
         return answer;
     }
