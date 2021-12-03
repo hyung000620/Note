@@ -1,7 +1,7 @@
 import java.util.*;
 class Node{ 
     int data; 
-    Node lt, rt; 
+    Node lt, rt; // 부모의 왼쪽 자식, 오른쪽 자식
     public Node(int val) { 
         data=val; 
         lt=rt=null; 
@@ -13,12 +13,12 @@ public class Main{
     public void DFS(Node root){ 
         if(root==null) 
             return; 
-        else{
-          System.out.print(root.data+" "); //전위 순회
+        else{ // 순회 기준은 부모.
+          System.out.print(root.data+" "); //전위 순회 : 부모 - 왼쪽 - 오른쪽.
 			    DFS(root.lt);
-			    System.out.print(root.data+" "); //중위 순회
+			    System.out.print(root.data+" "); //중위 순회 : 왼쪽 - 부모 - 오른쪽.
 			    DFS(root.rt);
-          System.out.print(root.data+" "); // 후위 순회
+          System.out.print(root.data+" "); // 후위 순회 : 왼쪽 - 오른쪽 - 부모.
 		}
     } 
   
