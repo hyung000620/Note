@@ -7,4 +7,3 @@
 - `JAVA`
 - `javascript`
 - `SpringBoot`
-- `REST API`
