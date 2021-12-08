@@ -9,7 +9,7 @@ public class Main {
         	if(arr[i][pos-1]!=0){
               int tmp = arr[i][pos-1];
               arr[i][pos-1] = 0;
-              if(!stack.isEmpty() && tmp == stack.peek()){answer+=2; stack.pop();}
+              if(!stack.isEmpty() && tmp == stack.peek()){answer+=2; stack.pop();} // 가장 상단에 값 비교.
               else{stack.push(tmp);}
               break;
             }
