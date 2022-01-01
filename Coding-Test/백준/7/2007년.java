@@ -1,0 +1,32 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));    
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        
+        int M = Integer.parseInt(st.nextToken());
+        int D = Integer.parseInt(st.nextToken());
+        
+        int[] months ={31,28,31,30,31,30,31,31,30,31,30,31};
+        String[] weeks ={"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
+
+        int total = D;
+        for(int i=0; i<M-1; ++i){
+            total += months[i];
+        }
+        bw.write(String.valueOf(weeks[total%7]));
+
+        bw.flush();
+        bw.close();
+    }
+    
+}
