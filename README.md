@@ -8,3 +8,7 @@
 - `JAVA`
 - `javascript`
 - `SpringBoot`
+- `PHP`
+- `JQuery`
+- `MySQL`
+- `AJAX`
