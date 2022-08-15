@@ -9,9 +9,7 @@ namespace test
         static void Main() 
         { 
             int index = int.Parse(Console.ReadLine());
-
-            StringBuilder total = new StringBuilder();
-            
+            StringBuilder total = new StringBuilder(); 
             for (int i = 0; i < index; i++)
             {
                 for (int j = 0; j < index; j++)
