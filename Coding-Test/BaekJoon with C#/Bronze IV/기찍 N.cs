@@ -6,7 +6,6 @@ namespace codingtest
 {
     class level3_baek{
         public static void Main(){
-            
             StreamReader sr = new StreamReader(Console.OpenStandardInput());
             StreamWriter sw = new StreamWriter(Console.OpenStandardOutput());
             StringBuilder sb = new StringBuilder();
