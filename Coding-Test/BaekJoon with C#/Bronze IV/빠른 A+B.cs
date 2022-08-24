@@ -9,7 +9,6 @@ static class Baekjoon
     {
         int readchar;
         while ((readchar = sr.Read()) < '-') ;
-
         var neg = false;
         if (readchar == '-')
         {
