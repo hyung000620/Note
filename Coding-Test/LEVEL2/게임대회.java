@@ -8,7 +8,6 @@ class Solution
             n = b%2 ==1? (b=(b+1)/2):(b=b/2);
             answer ++;
         }
-
         return answer;
     }
 }
