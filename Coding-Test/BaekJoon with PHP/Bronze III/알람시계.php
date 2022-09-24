@@ -1,4 +1,4 @@
-<?php
+<?
 fscanf(STDIN,"%d %d",$H,$M);
 if ($M-45<0) 
 {
